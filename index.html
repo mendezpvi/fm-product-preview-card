@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Preview Card</title>
+
+  <link rel="icon" href="./assets/icon/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="./assets/icon/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <main>
+    <div class="card" role="article">
+      <picture class="card__illustration">
+        <source media="(min-width: 600px)" srcset="./assets/image/image-product-desktop.webp">
+        <img src="./assets/image/image-product-mobile.webp" alt="An exquisite Chanel perfume elegantly escorted by a branch of leaves on each side.">
+      </picture>
+      <section class="card__body">
+        <span class="card__tag fw-500 clr-gray">perfume</span>
+        <h1 class="card__title fw-700 clr-dark">Gabrielle Essence Eau De Parfum</h1>
+        <p class="card__description fw-500 clr-gray">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <div class="price">
+          <span class="price__offer fw-700 clr-green">$149.99</span>
+          <del class="price__previous fw-500 clr-gray">$169.99</del>
+        </div>
+        <button type="button" class="btn fw-500">
+          <img src="./assets/icon/icon-cart.svg" alt="" aria-hidden="true" class="btn__icon">
+          Add to Cart
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <footer class="attribution fw-500 clr-dark">
+    <small>Challenges by <a href="https://www.frontendmentor.io/challenges" class="attribution__cta fw-700" target="_blank" rel="noreferrer">Frontend Mentor</a> - Coded by <a href="https://github.com/mendezpvi/fm-product-preview-card" class="attribution__cta fw-700" target="_blank" rel="noreferrer">VIMP</a></small>
+  </footer>
+</body>
+</html>
