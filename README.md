@@ -36,6 +36,8 @@ Users should be able to:
 
 [Live Site URL](https://mendezpvi.github.io/fm-product-preview-card/) 👀
 
+[Solution in Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-using-grid-ejb5P5ux2X) 👀
+
 [Challenges overcome](https://github.com/mendezpvi/frontend-mentor-challenges) 👀
 
 ## *Built with* :hammer_and_pick:
