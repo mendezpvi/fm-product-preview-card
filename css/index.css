@@ -1,0 +1,156 @@
+body {
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-mont), sans-serif;
+  background-color: var(--cream);
+}
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(28, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --deep-dark-blue: hsl(157, 43%, 18%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --ff-mont: 'Montserrat';
+  --ff-frau: 'Fraunces';
+}
+
+.clr-dark {
+  color: var(--very-dark-blue);
+}
+.clr-gray {
+  color: var(--dark-grayish-blue);
+}
+.clr-green {
+  color: var(--dark-cyan);
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-500 {
+  font-weight: 500;
+}
+
+
+.card {
+  margin-top: 3rem;
+  inline-size: clamp(21.4375rem, 91.3vw, 37.5rem);
+  display: grid;
+  background-color: var(--white);
+  border-radius: .63rem;
+  box-shadow: 0 .25rem .25rem hsl(0, 0%, 0%, .05);
+  overflow: hidden;
+}
+.card__illustration {
+  filter: brightness(.9);
+  & img {
+    block-size: 100%;
+    object-fit: cover;
+  }
+}
+
+.card__body {
+  padding: 1.3rem 1.5rem;
+}
+.card__tag {
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.card__title {
+  margin-top: .75rem;
+  font-family: var(--ff-frau), sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+.card__description {
+  margin-top: 1rem;
+  font-size: .875rem;
+  line-height: 1.65;
+}
+
+.price {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.price__offer {
+  font-family: var(--ff-frau), sans-serif;
+  font-size: 2rem;
+}
+.price__previous {
+  font-size: .8125rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding-block: .95rem;
+  inline-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+  font-size: .875rem;
+  background-color: var(--dark-cyan);
+  border-radius: .5rem;
+  color: white;
+  letter-spacing: .1px;
+  transition: background-color .3s ease;
+}
+
+.attribution {
+  padding-block: 1rem;
+  font-size: .83rem;
+  text-align: center;
+}
+.attribution__cta {
+  margin-inline: .15rem;
+  text-decoration-thickness: .1rem;
+  text-underline-offset: .15rem;
+}
+
+@media (width >= 600px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card__body {
+    padding: 1.8rem 1.98rem;
+  }
+  .card__title {
+    margin-top: 1.25rem;
+  }
+  .card__description {
+    margin-top: 1.5rem;
+  }
+  .price {
+    margin-top: 1.55rem;
+  }
+  .btn {
+    margin-top: 1.6rem;
+  }
+}
+
+:focus-visible {
+  outline: .15rem dotted var(--deep-dark-blue);
+  outline-offset: .15rem;
+}
+
+@media (hover:hover) {
+  .btn:hover {
+    background-color: var(--deep-dark-blue);
+  }
+  .attribution__cta:hover {
+    color: var(--deep-dark-blue);
+    text-decoration: none;
+  }
+}
+
+.attribution__cta:focus-visible {
+  text-decoration: none;
+}
